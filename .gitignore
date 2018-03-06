@@ -1,0 +1,7 @@
+*.pyc
+*~
+*.json
+image_model/resnet-152.t7
+image_model/transforms.lua
+image_model/VGG_ILSVRC_19_layers.caffemodel
+image_model/VGG_ILSVRC_19_layers_deploy.prototxt

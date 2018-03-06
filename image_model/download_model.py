@@ -27,10 +27,10 @@ def main(params):
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('--download', default='Residual', help='VGG or Residual')
+    parser.add_argument('--download', default='VGG', help='VGG or Residual')
     # input json  
     args = parser.parse_args()
     params = vars(args)
-    print 'parsed input parameters:'
-    print json.dumps(params, indent = 2)
+    print('parsed input parameters:')
+    print(json.dumps(params, indent = 2))
     main(params)
