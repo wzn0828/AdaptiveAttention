@@ -27,11 +27,11 @@ cmd:option('-cnn_model','../image_model/resnet-152.t7','path to CNN model file c
 
 cmd:option('-start_from', '', 'path to a model checkpoint to initialize model weights from. Empty = don\'t')
 cmd:option('-checkpoint_path', 'save/', 'folder to save checkpoints into (empty = this folder)')
-cmd:option('-startEpoch', 1, 'Max number of training epoch')
+cmd:option('-startEpoch', 1, 'Max number of training epoch')--wzn: this comment is not very accurate
 
 -- Model settings
 cmd:option('-rnn_size',512,'size of the rnn in number of hidden nodes in each layer')
-cmd:option('-num_layers',1,'the encoding size of each token in the vocabulary, and the image.')
+cmd:option('-num_layers',1,'the encoding size of each token in the vocabulary, and the image.') --wzn: this comment is not very accurate
 cmd:option('-input_encoding_size',512,'the encoding size of each token in the vocabulary, and the image.')
 cmd:option('-batch_size',20,'what is the batch size in number of images per batch? (there will be x seq_per_img sentences)')
 
